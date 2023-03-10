@@ -1,5 +1,6 @@
 package com.example.books.repository;
 
+import com.example.books.model.exceptions.ResourceNotFoundException;
 import org.springframework.stereotype.Repository;
 import com.example.books.model.Book;
 
@@ -61,7 +62,7 @@ public class BookRepository {
         Optional<Book> bookOptional = getByID(book.getId());
 
         if (bookOptional.isEmpty())
-            throw new IllegalArgumentException("The book is not in the list!");
+            throw new ResourceNotFoundException("Book not found!");
 
         delete(book.getId());
         books.add(book);
