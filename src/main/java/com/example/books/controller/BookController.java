@@ -31,14 +31,14 @@ public class BookController {
     }
 
     @DeleteMapping("/{id}")
-    public String deletar(@PathVariable Integer id) {
+    public String delete(@PathVariable Integer id) {
         bookService.delete(id);
         return "Operation concluded with exit";
 
     }
 
     @PutMapping("/{id}")
-    public Book atualizar(@RequestBody Book book, @PathVariable Integer id) {
+    public Book update(@RequestBody Book book, @PathVariable Integer id) {
         return bookService.update(id, book);
     }
 

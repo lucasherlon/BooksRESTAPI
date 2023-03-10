@@ -2,10 +2,10 @@ package com.example.books.model;
 
 public class Book {
     private Integer id;
-    private String nome;
+    private String name;
     private String autor;
-    private String editora;
-    private Integer anoPublicacao;
+    private String publisher;
+    private Integer year;
 
     public Integer getId() {
         return id;
@@ -15,12 +15,12 @@ public class Book {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAutor() {
@@ -31,19 +31,19 @@ public class Book {
         this.autor = autor;
     }
 
-    public String getEditora() {
-        return editora;
+    public String getPublisher() {
+        return publisher;
     }
 
-    public void setEditora(String editora) {
-        this.editora = editora;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
-    public Integer getAnoPublicacao() {
-        return anoPublicacao;
+    public Integer getYear() {
+        return year;
     }
 
-    public void setAnoPublicacao(Integer anoPublicacao) {
-        this.anoPublicacao = anoPublicacao;
+    public void setYear(Integer year) {
+        this.year = year;
     }
 }
