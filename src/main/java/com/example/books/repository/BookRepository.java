@@ -34,6 +34,17 @@ public class BookRepository {
     }
 
     /**
+     * Get a book in the arraylist by its name
+     * @param name the name of the book
+     * @return the book found in the arraylist
+     */
+    public Optional<Book> getByName(String name) {
+        return books.stream()
+                .filter(book -> book.getName().equalsIgnoreCase(name))
+                .findFirst();
+    }
+
+    /**
      * Add a new book to the arrayList
      * @param book
      * @return

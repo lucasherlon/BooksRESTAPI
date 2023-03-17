@@ -30,6 +30,11 @@ public class BookController {
         return bookService.getByID(id);
     }
 
+    @GetMapping("/{name}")
+    public Optional<Book> getByName(@PathVariable String name) {
+        return bookService.getByName(name);
+    }
+
     @DeleteMapping("/{id}")
     public String delete(@PathVariable int id) {
         bookService.delete(id);

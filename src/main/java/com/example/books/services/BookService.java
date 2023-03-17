@@ -31,6 +31,15 @@ public class BookService {
     }
 
     /**
+     * Get a book in the repository according to its name
+     * @param name the name of the book
+     * @return the name of the book
+     */
+    public Optional<Book> getByName(String name) {
+        return bookRepository.getByName(name);
+    }
+
+    /**
      * Add a book in the repository
      * @param book the book that will be added
      * @return the book added
