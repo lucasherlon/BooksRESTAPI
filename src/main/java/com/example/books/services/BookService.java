@@ -26,7 +26,7 @@ public class BookService {
      * @param id the id of the book
      * @return the book with the id
      */
-    public Optional<Book> getByID(Integer id) {
+    public Optional<Book> getByID(int id) {
         return bookRepository.getByID(id);
     }
 
@@ -43,7 +43,7 @@ public class BookService {
      * Delete a book from the repository
      * @param id the id of the book to be deleted
      */
-    public void delete(Integer id) {
+    public void delete(int id) {
         bookRepository.delete(id);
     }
 
@@ -53,7 +53,7 @@ public class BookService {
      * @param book the book that will be updated
      * @return
      */
-    public Book update(Integer id, Book book) {
+    public Book update(int id, Book book) {
         book.setId(id);
         return bookRepository.update(book);
 

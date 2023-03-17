@@ -12,7 +12,7 @@ import java.util.Optional;
 public class BookRepository {
 
     private List<Book> books = new ArrayList<>();
-    private Integer lastID = 0;
+    private int lastID = 0;
 
     /**
      * Method to get all the books listed
@@ -27,7 +27,7 @@ public class BookRepository {
      * @param id the id of the book
      * @return the book with the given id
      */
-    public Optional<Book> getByID(Integer id) {
+    public Optional<Book> getByID(int id) {
         return books.stream()
                 .filter(book -> book.getId() == id)
                 .findFirst();
@@ -49,7 +49,7 @@ public class BookRepository {
      * Delete a book from the arrayList
      * @param id id of the book to be deleted
      */
-    public void delete(Integer id) {
+    public void delete(int id) {
         books.removeIf(book -> book.getId() == id);
     }
 

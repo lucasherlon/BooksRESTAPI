@@ -1,17 +1,17 @@
 package com.example.books.model;
 
 public class Book {
-    private Integer id;
+    private int id;
     private String name;
     private String autor;
     private String publisher;
-    private Integer year;
+    private int year;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -39,11 +39,11 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public Integer getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(Integer year) {
+    public void setYear(int year) {
         this.year = year;
     }
 }

@@ -26,19 +26,19 @@ public class BookController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Book> getByID(@PathVariable Integer id) {
+    public Optional<Book> getByID(@PathVariable int id) {
         return bookService.getByID(id);
     }
 
     @DeleteMapping("/{id}")
-    public String delete(@PathVariable Integer id) {
+    public String delete(@PathVariable int id) {
         bookService.delete(id);
         return "Operation concluded with exit";
 
     }
 
     @PutMapping("/{id}")
-    public Book update(@RequestBody Book book, @PathVariable Integer id) {
+    public Book update(@RequestBody Book book, @PathVariable int id) {
         return bookService.update(id, book);
     }
 
