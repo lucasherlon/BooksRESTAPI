@@ -3,7 +3,6 @@ package com.example.books.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.books.model.Book;
-import com.example.books.repository.BookRepository;
 import com.example.books.services.BookService;
 
 import java.util.List;
